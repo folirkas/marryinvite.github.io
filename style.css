@@ -411,5 +411,102 @@ padding:20px 0;
 
 }
 
+  /* Ivory Garden decorations */
+
+
+.hero-content {
+    max-width: 700px;
+}
+
+
+.subtitle {
+
+    margin-top:30px;
+
+    font-size:16px;
+
+    font-weight:300;
+
+    letter-spacing:1px;
+
+    line-height:1.8;
+
+    opacity:.9;
+
+}
+
+
+
+.botanical {
+
+    position:absolute;
+
+    width:250px;
+
+    height:250px;
+
+    opacity:.25;
+
+    pointer-events:none;
+
+}
+
+
+
+.botanical-left {
+
+    left:-80px;
+
+    bottom:40px;
+
+    border:1px solid rgba(255,255,255,.6);
+
+    border-radius:100% 0 100% 0;
+
+    transform:rotate(-25deg);
+
+}
+
+
+
+.botanical-right {
+
+    right:-80px;
+
+    top:80px;
+
+    border:1px solid rgba(255,255,255,.6);
+
+    border-radius:0 100% 0 100%;
+
+    transform:rotate(25deg);
+
+}
+
+
+
+.section {
+
+    position:relative;
+
+}
+
+
+
+.section::before {
+
+    content:"";
+
+    display:block;
+
+    width:60px;
+
+    height:1px;
+
+    background:#c9b49a;
+
+    margin:0 auto 40px;
+
+}
 
 }
