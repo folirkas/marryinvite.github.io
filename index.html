@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Анна & Иван — Свадебное приглашение</title>
+<title>Анна & Иван | Свадебное приглашение</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -16,31 +16,27 @@
 <body>
 
 
-<!-- Первый экран -->
+<!-- HERO -->
 
 <section class="hero">
 
-<div class="overlay"></div>
-
+<div class="hero-overlay"></div>
 
 <div class="hero-content">
 
-
-<p class="eyebrow">
+<p class="subtitle-top">
 СВАДЕБНОЕ ПРИГЛАШЕНИЕ
 </p>
 
 
 <h1>
 Анна
-<br>
-&
-<br>
+<span>&</span>
 Иван
 </h1>
 
 
-<p class="hero-text">
+<p class="hero-description">
 Приглашаем вас на нашу свадьбу
 </p>
 
@@ -51,16 +47,23 @@
 
 
 <p class="hero-small">
-Будем рады видеть вас рядом с нами в этот особенный день
+Будем рады видеть вас рядом с нами
+в этот особенный день
 </p>
 
 
-<a href="#invitation" class="button">
+<a href="#welcome" class="button">
 Открыть приглашение
 </a>
 
 
 </div>
+
+
+<div class="scroll">
+↓
+</div>
+
 
 </section>
 
@@ -68,13 +71,14 @@
 
 
 
-<!-- Приглашение -->
+
+<!-- WELCOME -->
 
 
-<section id="invitation" class="section invitation">
+<section id="welcome" class="section welcome">
 
 
-<div class="decor">
+<div class="ornament">
 ✦
 </div>
 
@@ -94,7 +98,7 @@
 </p>
 
 
-<div class="names">
+<div class="couple-name">
 Анна и Иван
 </div>
 
@@ -106,7 +110,8 @@
 
 
 
-<!-- Таймер -->
+
+<!-- TIMER -->
 
 
 <section class="section timer-section">
@@ -121,34 +126,26 @@
 
 
 <div>
-<span id="days">
-00
-</span>
-<p>дней</p>
+<span id="days">00</span>
+<small>дней</small>
 </div>
 
 
 <div>
-<span id="hours">
-00
-</span>
-<p>часов</p>
+<span id="hours">00</span>
+<small>часов</small>
 </div>
 
 
 <div>
-<span id="minutes">
-00
-</span>
-<p>минут</p>
+<span id="minutes">00</span>
+<small>минут</small>
 </div>
 
 
 <div>
-<span id="seconds">
-00
-</span>
-<p>секунд</p>
+<span id="seconds">00</span>
+<small>секунд</small>
 </div>
 
 
@@ -162,24 +159,27 @@
 
 
 
-<!-- Детали -->
+
+<!-- DETAILS -->
 
 
 <section class="section details">
 
 
 <h2>
-Детали дня
+Детали торжества
 </h2>
 
 
-<div class="details-grid">
+<div class="details-list">
 
 
-<div class="detail-card">
+<div class="detail">
 
 <div class="icon">
-♡
+<svg viewBox="0 0 24 24">
+<path d="M7 3v4M17 3v4M4 9h16M5 5h14a1 1 0 0 1 1 1v15H4V6a1 1 0 0 1 1-1z"/>
+</svg>
 </div>
 
 <h3>
@@ -187,19 +187,24 @@
 </h3>
 
 <p>
-18 июля 2027<br>
-Суббота
+18 июля 2027
 </p>
 
 </div>
 
 
 
-<div class="detail-card">
+
+
+<div class="detail">
 
 <div class="icon">
-◷
+<svg viewBox="0 0 24 24">
+<circle cx="12" cy="12" r="9"/>
+<path d="M12 7v5l3 2"/>
+</svg>
 </div>
+
 
 <h3>
 Сбор гостей
@@ -209,15 +214,22 @@
 15:00
 </p>
 
+
 </div>
 
 
 
-<div class="detail-card">
+
+
+<div class="detail">
 
 <div class="icon">
-⌂
+<svg viewBox="0 0 24 24">
+<path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/>
+<circle cx="12" cy="9" r="2"/>
+</svg>
 </div>
+
 
 <h3>
 Место
@@ -228,6 +240,7 @@ Wedding Hall<br>
 Москва
 </p>
 
+
 </div>
 
 
@@ -242,7 +255,7 @@ Wedding Hall<br>
 
 
 
-<!-- Карта -->
+<!-- MAP -->
 
 
 <section class="section map-section">
@@ -273,8 +286,7 @@ frameborder="0">
 
 
 
-
-<!-- Программа -->
+<!-- PROGRAM -->
 
 
 <section class="section program">
@@ -285,22 +297,21 @@ frameborder="0">
 </h2>
 
 
-
-<div class="program-grid">
+<div class="program-list">
 
 
 <div class="program-item">
 
 <div class="program-icon">
-☕
+01
 </div>
 
 <h3>
-15:00
-</h3>
-
-<p>
 Сбор гостей
+</h3>
+
+<p>
+15:00
 </p>
 
 </div>
@@ -310,15 +321,15 @@ frameborder="0">
 <div class="program-item">
 
 <div class="program-icon">
-💍
+02
 </div>
 
 <h3>
-16:00
-</h3>
-
-<p>
 Церемония
+</h3>
+
+<p>
+16:00
 </p>
 
 </div>
@@ -328,15 +339,15 @@ frameborder="0">
 <div class="program-item">
 
 <div class="program-icon">
-🥂
+03
 </div>
 
 <h3>
+Ужин
+</h3>
+
+<p>
 18:00
-</h3>
-
-<p>
-Праздничный ужин
 </p>
 
 </div>
@@ -346,15 +357,15 @@ frameborder="0">
 <div class="program-item">
 
 <div class="program-icon">
-🎂
+04
 </div>
 
 <h3>
-22:00
+Праздничный вечер
 </h3>
 
 <p>
-Завершение вечера
+20:00
 </p>
 
 </div>
@@ -371,8 +382,7 @@ frameborder="0">
 
 
 
-
-<!-- Дресс код -->
+<!-- DRESS CODE -->
 
 
 <section class="section dress">
@@ -388,29 +398,22 @@ frameborder="0">
 </p>
 
 
+<div class="palette">
 
-<div class="colors">
-
-
-<div class="color c1"></div>
-
-<div class="color c2"></div>
-
-<div class="color c3"></div>
-
-<div class="color c4"></div>
-
+<div></div>
+<div></div>
+<div></div>
+<div></div>
 
 </div>
 
 
-<p class="gift-text">
+<p class="gift">
 
-Ваше присутствие — лучший подарок для нас.
+Ваше присутствие — самый ценный подарок для нас.
 <br>
 Если вы захотите сделать нам приятный сюрприз,
 мы будем благодарны за вклад в нашу будущую семейную жизнь.
-
 </p>
 
 
@@ -423,45 +426,139 @@ frameborder="0">
 
 
 
-<!-- Анкета -->
+<!-- RSVP -->
 
 
-<section class="section form-section">
+<section class="section rsvp">
 
 
 <h2>
-Подтвердите присутствие
+Анкета гостя
 </h2>
 
 
 <form>
 
 
-<input type="text" placeholder="Ваше имя">
+<h3>
+Сможете ли вы присутствовать на торжестве?
+</h3>
 
 
-<select>
-
-<option>
-Будете ли вы присутствовать?
-</option>
-
-<option>
-Да
-</option>
-
-<option>
-Нет
-</option>
-
-</select>
+<label>
+<input type="radio" name="visit">
+Обязательно приду
+</label>
 
 
+<label>
+<input type="radio" name="visit">
+Буду со второй половинкой
+</label>
 
-<input type="number" placeholder="Количество гостей">
+
+<label>
+<input type="radio" name="visit">
+Не смогу присутствовать
+</label>
 
 
-<textarea placeholder="Комментарий"></textarea>
+
+<h3>
+Ваше Имя и Фамилия
+</h3>
+
+
+<input 
+type="text"
+placeholder="Иван Иванов / Мария Иванова">
+
+
+
+<p class="hint">
+Если вы будете с парой или семьёй,
+введите все имена и фамилии
+</p>
+
+
+
+
+
+<h3>
+Предпочтения по горячему блюду
+</h3>
+
+
+<label>
+<input type="radio" name="food">
+Мясо
+</label>
+
+
+<label>
+<input type="radio" name="food">
+Рыба
+</label>
+
+
+<label>
+<input type="radio" name="food">
+Птица
+</label>
+
+
+
+
+
+<h3>
+Уточните предпочтения в напитках
+</h3>
+
+
+<label>
+<input type="checkbox">
+Безалкогольные напитки
+</label>
+
+
+<label>
+<input type="checkbox">
+Шампанское
+</label>
+
+
+<label>
+<input type="checkbox">
+Вино белое
+</label>
+
+
+<label>
+<input type="checkbox">
+Вино красное
+</label>
+
+
+<label>
+<input type="checkbox">
+Водка
+</label>
+
+
+<label>
+<input type="checkbox">
+Виски
+</label>
+
+
+
+
+<h3>
+Комментарий
+</h3>
+
+
+<textarea placeholder="Ваш комментарий"></textarea>
 
 
 <button>
@@ -480,10 +577,10 @@ frameborder="0">
 
 
 
-<!-- Финал -->
+<!-- FOOTER -->
 
 
-<section class="footer">
+<footer class="footer">
 
 
 <h2>
@@ -496,7 +593,8 @@ frameborder="0">
 </p>
 
 
-</section>
+</footer>
+
 
 
 
