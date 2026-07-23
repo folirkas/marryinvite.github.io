@@ -2,29 +2,34 @@
 <html lang="ru">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Свадебное приглашение</title>
+<title>Анна & Иван — Свадебное приглашение</title>
 
 <link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
 
+
+<!-- Первый экран -->
 
 <section class="hero">
 
 <div class="overlay"></div>
 
+
 <div class="hero-content">
 
-<span class="small-title">
-СВАДЕБНОЕ ПРИГЛАШЕНИЕ
-</span>
 
-<div class="line"></div>
+<p class="eyebrow">
+СВАДЕБНОЕ ПРИГЛАШЕНИЕ
+</p>
+
 
 <h1>
 Анна
@@ -34,13 +39,26 @@
 Иван
 </h1>
 
-<p class="date">
+
+<p class="hero-text">
+Приглашаем вас на нашу свадьбу
+</p>
+
+
+<p class="hero-date">
 18 июля 2027
 </p>
 
-<a href="#welcome" class="button">
+
+<p class="hero-small">
+Будем рады видеть вас рядом с нами в этот особенный день
+</p>
+
+
+<a href="#invitation" class="button">
 Открыть приглашение
 </a>
+
 
 </div>
 
@@ -48,7 +66,12 @@
 
 
 
-<section id="welcome" class="section">
+
+
+<!-- Приглашение -->
+
+
+<section id="invitation" class="section invitation">
 
 
 <div class="decor">
@@ -57,31 +80,114 @@
 
 
 <h2>
-Мы будем рады видеть вас
+Дорогие наши!
 </h2>
 
 
-<p class="text">
-С любовью приглашаем вас разделить
-с нами один из самых важных дней нашей жизни.
+<p>
+Мы счастливы пригласить вас разделить с нами один из самых важных дней в нашей жизни — день нашей свадьбы!
 </p>
 
 
+<p>
+Будем рады видеть вас среди наших гостей, чтобы вместе отпраздновать это особенное событие.
+</p>
 
-<div class="info-grid">
+
+<div class="names">
+Анна и Иван
+</div>
 
 
-<div class="card">
+</section>
 
-<span>
-ДАТА
+
+
+
+
+
+<!-- Таймер -->
+
+
+<section class="section timer-section">
+
+
+<h2>
+До нашей свадьбы осталось
+</h2>
+
+
+<div class="timer">
+
+
+<div>
+<span id="days">
+00
 </span>
+<p>дней</p>
+</div>
+
+
+<div>
+<span id="hours">
+00
+</span>
+<p>часов</p>
+</div>
+
+
+<div>
+<span id="minutes">
+00
+</span>
+<p>минут</p>
+</div>
+
+
+<div>
+<span id="seconds">
+00
+</span>
+<p>секунд</p>
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- Детали -->
+
+
+<section class="section details">
+
+
+<h2>
+Детали дня
+</h2>
+
+
+<div class="details-grid">
+
+
+<div class="detail-card">
+
+<div class="icon">
+♡
+</div>
 
 <h3>
-18 июля 2027
+Дата
 </h3>
 
 <p>
+18 июля 2027<br>
 Суббота
 </p>
 
@@ -89,17 +195,36 @@
 
 
 
-<div class="card">
+<div class="detail-card">
 
-<span>
-МЕСТО
-</span>
+<div class="icon">
+◷
+</div>
 
 <h3>
-Wedding Hall
+Сбор гостей
 </h3>
 
 <p>
+15:00
+</p>
+
+</div>
+
+
+
+<div class="detail-card">
+
+<div class="icon">
+⌂
+</div>
+
+<h3>
+Место
+</h3>
+
+<p>
+Wedding Hall<br>
 Москва
 </p>
 
@@ -111,44 +236,30 @@ Wedding Hall
 
 </section>
 
-<section class="story">
-
-<section class="story">
-
-
-<div class="story-image">
-
-<img src="images/couple.jpg" alt="Анна и Иван">
-
-</div>
 
 
 
-<div class="story-text">
 
 
-<div class="decor">
-✦
-</div>
+
+<!-- Карта -->
+
+
+<section class="section map-section">
 
 
 <h2>
-Наша история
+Как добраться
 </h2>
 
 
-<p>
-Мы верим, что самые важные моменты
-становятся еще прекраснее,
-когда рядом находятся близкие люди.
-</p>
+<div class="map-container">
 
 
-<p>
-С радостью приглашаем вас разделить
-с нами день, который навсегда останется
-в нашей памяти.
-</p>
+<iframe 
+src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae006672fb924f0f9093693e994c31a3a3479979e68396348e3d3eaf63bbdf87c&amp;source=constructor"
+frameborder="0">
+</iframe>
 
 
 </div>
@@ -158,12 +269,15 @@ Wedding Hall
 
 
 
-<section class="section">
 
 
-<div class="decor">
-✦
-</div>
+
+
+
+<!-- Программа -->
+
+
+<section class="section program">
 
 
 <h2>
@@ -172,75 +286,78 @@ Wedding Hall
 
 
 
-<div class="timeline">
+<div class="program-grid">
 
 
-<div class="timeline-item">
+<div class="program-item">
 
-<div class="time">
+<div class="program-icon">
+☕
+</div>
+
+<h3>
 15:00
-</div>
+</h3>
 
-<div>
-
-<h3>
+<p>
 Сбор гостей
-</h3>
-
-<p>
-Встречаемся перед началом церемонии
 </p>
 
 </div>
 
+
+
+<div class="program-item">
+
+<div class="program-icon">
+💍
 </div>
 
-
-
-
-<div class="timeline-item">
-
-<div class="time">
+<h3>
 16:00
-</div>
+</h3>
 
-<div>
-
-<h3>
+<p>
 Церемония
-</h3>
-
-<p>
-Главный момент нашего дня
 </p>
 
 </div>
 
+
+
+<div class="program-item">
+
+<div class="program-icon">
+🥂
 </div>
-
-
-
-
-<div class="timeline-item">
-
-<div class="time">
-18:00
-</div>
-
-<div>
 
 <h3>
-Праздничный ужин
+18:00
 </h3>
 
 <p>
-Вечер, наполненный теплом и радостью
+Праздничный ужин
 </p>
 
 </div>
 
+
+
+<div class="program-item">
+
+<div class="program-icon">
+🎂
 </div>
 
+<h3>
+22:00
+</h3>
+
+<p>
+Завершение вечера
+</p>
+
+</div>
 
 
 </div>
@@ -252,25 +369,134 @@ Wedding Hall
 
 
 
-<section class="footer">
 
-<div class="decor">
-✦
-</div>
+
+
+<!-- Дресс код -->
+
+
+<section class="section dress">
 
 
 <h2>
-Спасибо, что разделите этот день с нами
+Дресс-код
 </h2>
 
 
 <p>
-Анна & Иван
+Будем рады видеть вас в нашей цветовой палитре
+</p>
+
+
+
+<div class="colors">
+
+
+<div class="color c1"></div>
+
+<div class="color c2"></div>
+
+<div class="color c3"></div>
+
+<div class="color c4"></div>
+
+
+</div>
+
+
+<p class="gift-text">
+
+Ваше присутствие — лучший подарок для нас.
+<br>
+Если вы захотите сделать нам приятный сюрприз,
+мы будем благодарны за вклад в нашу будущую семейную жизнь.
+
 </p>
 
 
 </section>
 
+
+
+
+
+
+
+
+<!-- Анкета -->
+
+
+<section class="section form-section">
+
+
+<h2>
+Подтвердите присутствие
+</h2>
+
+
+<form>
+
+
+<input type="text" placeholder="Ваше имя">
+
+
+<select>
+
+<option>
+Будете ли вы присутствовать?
+</option>
+
+<option>
+Да
+</option>
+
+<option>
+Нет
+</option>
+
+</select>
+
+
+
+<input type="number" placeholder="Количество гостей">
+
+
+<textarea placeholder="Комментарий"></textarea>
+
+
+<button>
+Отправить
+</button>
+
+
+</form>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- Финал -->
+
+
+<section class="footer">
+
+
+<h2>
+Анна & Иван
+</h2>
+
+
+<p>
+Спасибо, что будете с нами в этот день!
+</p>
+
+
+</section>
 
 
 
